@@ -1,0 +1,26 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\kubka\source\repos\Leplacian\Leplacian>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\nvcc.exe" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc145.pdb" -o C:\Users\kubka\source\repos\Leplacian\Leplacian\x64\Debug\kernel.cu.obj "C:\Users\kubka\source\repos\Leplacian\Leplacian\kernel.cu" 
+C:\Users\kubka\source\repos\Leplacian\Leplacian\stb_image.h(4276): warning #550-D: variable "old_limit" was set but never used
+       unsigned int cur, limit, old_limit;
+                                ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\kubka\source\repos\Leplacian\Leplacian\stb_image.h(5185): warning #550-D: variable "idata_limit_old" was set but never used
+                   stbi__uint32 idata_limit_old = idata_limit;
+                                ^
+  
+C:\Users\kubka\source\repos\Leplacian\Leplacian\stb_image.h(6972): warning #550-D: variable "out_size" was set but never used
+          int out_size = 0;
+              ^
+  
+C:\Users\kubka\source\repos\Leplacian\Leplacian\stb_image.h(6973): warning #550-D: variable "delays_size" was set but never used
+          int delays_size = 0;
+              ^
+  
+  kernel.cu
+  tmpxft_00005f4c_00000000-7_kernel.cudafe1.cpp
+     Trwa tworzenie biblioteki C:\Users\kubka\source\repos\Leplacian\x64\Debug\Leplacian.lib i obiektu C:\Users\kubka\source\repos\Leplacian\x64\Debug\Leplacian.exp
+LINK : warning LNK4098: domyślna biblioteka "LIBCMT" powoduje konflikt z innymi bibliotekami; użyj opcji /NODEFAULTLIB:biblioteka
+  Leplacian.vcxproj -> C:\Users\kubka\source\repos\Leplacian\x64\Debug\Leplacian.exe
